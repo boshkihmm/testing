@@ -27,21 +27,24 @@ Layout
 		contains:buttons
 	*res
 		contains:Resources
-		class:menu1class
+		class:fullwidth
 	*buttons
 		contains:Buttons
 	*store
 		contains:buildings, upgrades
 	*buildings
 		contains:BulkDisplay, Buildings
-		header:Units
+		header:<b>Units</b>
 		tooltip origin:left
 	*upgrades
 		contains:Upgrades
-		header:Unit Upgrades
+		header:<b>Unit Upgrades</b>
 		costs:show
 		names:hide
-		
+	*unit1ups
+		contains:tag:unit1up
+		header:<b>Unit 1 Upgrades</b>
+
 Resources
 	
 	*test1
