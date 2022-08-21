@@ -3,41 +3,41 @@ name:CSS/Layout Testing
 by:boshki0987
 desc:Hmmmmmmmm<//><.>Created on <b>August 20, 2022</b><.>
 
-Layout
-	*main
-		contains:res, cbuttons, pbuttons, res2, res3
-  		*res
-    		contains:tag:resource
-    		class:fullWidth
-		*res2
-			contains:tag:special
-			class:fullWidth
-			ps:hide
-		*res3
-			contains:tag:timer
-  		*cbuttons
-			contains:tag:cButton
-		*pbuttons
-			contains:tag:pButton
-		*coolBox
-		*shinyBox
+Settings
 
+
+
+CSS
+
+	.menu1css {
+		left: 20% !important; /* this is how far from the left edge of the window the menu is (percentage of screen width) */
+		top: 0% !important; /* this is how far from the top the menu is in percentage of screen height */
+		width: 25% !important; /* this is the width of the menu in percentage of screen width */
+		height: 55% !important; /* the height of the menu in percentage of screen height */
+		overflow-x: hidden; /* the menu can't scroll horizontally */
+		overflow-y: scroll; /* the menu can scroll vertically */
+		position: absolute !important; /* freely place the menu on the screen */
+		border-style: solid; /* the black border of the menu is solid */
+		border-width: 2px; /* the border is 2 pixels wide */
+		border-color: #000000FF; /* the border is black and not transparent */
+
+Layout
+
+	*main
+		contains:res, buttons
+	*res
+		contains:Resources
+		class:menu1class
+	*buttons
+		contains:Buttons
 	*store
-  		contains:store2, log, menuButtons
-		*log
-			contains:Log
-		*menuButtons
-			contains:tag:menuButton
-			no tooltip
-		*animsSettingTitle
-			contains:tag:csettingTitle
-		*clickanimSettings
-			contains:tag:csetting
-		*buttonSettingTitle
-			contains:tag:bsettingTitle
-		*buttonSettings
-			contains:tag:bsetting
- 		*store2
-   	 		contains:tag:warning, tag:csettingTitle, clickanimSettings, tag:bsettingTitle, buttonSettings, tag:buildingtxt, tag:philding, tag:upgradetxt, tag:upgrade, tag:ownedUpgradetxt, tag:upgradeOwned, tag:spelltxt, tag:spell, tag:spellBoosttxt, tag:spellBoost, tag:divinetxt, tag:divine, tag:achievPoints, tag:achievement, tag:secretPoints, tag:secret, tag:stat
-    		tooltip origin:left
-			ps:hide
+		contains:buildings, upgrades
+	*buildings
+		contains:BulkDisplay, Buildings
+		header:Units
+		tooltip origin:left
+	*upgrades
+		contains:Upgrades
+		header:Unit Upgrades
+		costs:show
+		names:hide
