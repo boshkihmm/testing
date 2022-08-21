@@ -1,0 +1,43 @@
+Let's make a game!
+name:CSS/Layout Testing
+by:boshki0987
+desc:Hmmmmmmmm<//><.>Created on <b>August 20, 2022</b><.>
+
+Layout
+	*main
+		contains:res, cbuttons, pbuttons, res2, res3
+  		*res
+    		contains:tag:resource
+    		class:fullWidth
+		*res2
+			contains:tag:special
+			class:fullWidth
+			ps:hide
+		*res3
+			contains:tag:timer
+  		*cbuttons
+			contains:tag:cButton
+		*pbuttons
+			contains:tag:pButton
+		*coolBox
+		*shinyBox
+
+	*store
+  		contains:store2, log, menuButtons
+		*log
+			contains:Log
+		*menuButtons
+			contains:tag:menuButton
+			no tooltip
+		*animsSettingTitle
+			contains:tag:csettingTitle
+		*clickanimSettings
+			contains:tag:csetting
+		*buttonSettingTitle
+			contains:tag:bsettingTitle
+		*buttonSettings
+			contains:tag:bsetting
+ 		*store2
+   	 		contains:tag:warning, tag:csettingTitle, clickanimSettings, tag:bsettingTitle, buttonSettings, tag:buildingtxt, tag:philding, tag:upgradetxt, tag:upgrade, tag:ownedUpgradetxt, tag:upgradeOwned, tag:spelltxt, tag:spell, tag:spellBoosttxt, tag:spellBoost, tag:divinetxt, tag:divine, tag:achievPoints, tag:achievement, tag:secretPoints, tag:secret, tag:stat
+    		tooltip origin:left
+			ps:hide
