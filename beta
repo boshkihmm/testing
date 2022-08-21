@@ -37,7 +37,7 @@ Layout
 		header:<b>Units</b>
 		tooltip origin:left
 	*upgrades
-		contains:Upgrades
+		contains:Upgrades, unit1up
 		header:<b>Unit Upgrades</b>
 		costs:show
 		names:hide
