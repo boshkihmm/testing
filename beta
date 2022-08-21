@@ -41,3 +41,10 @@ Layout
 		header:Unit Upgrades
 		costs:show
 		names:hide
+		
+Resources
+	
+	*test1
+		name:What's Up
+		desc:The sky
+	*test2
